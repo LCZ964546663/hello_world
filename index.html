@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己简单的简历加点css</title>
+    <style>
+        /* 只能用于块级元素，行内元素没办法实现 */
+        /* h1,span,ul,li{
+            text-align: center;
+        } */
+        body {
+            background: black;
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+
+        h1 {
+            color: deeppink;
+            font-style: italic;
+            text-shadow: 5px 5px 5px #FF0000;            
+        }
+
+        /* font-weight设置字体的粗细最小0，最大900 */
+        span {
+            color: aqua;
+            font-weight: 900;
+            line-height: 25px;
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+
+        span ul li {
+            color: gold;
+            /* 设置列表样式为方块  */
+            list-style-type: square;
+            /* 设置文本下划线 */
+            text-decoration: underline;
+            /* 设置文本阴影 */
+            /* 语法：text-shadow: h-shadow(水平阴影的位置) v-shadow(垂直阴影的位置) blur(阴影的距离) color; */
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>简历</h1>
+    <span>姓名：刘朝栉</span><br>
+    <span>性别：男</span><br>
+    <span>联系方式：
+        <ul>
+            <li>phone：33211</li>
+            <li>mailbox：964546663@qq.com</li>
+            <li>QQ：964546663</li>
+        </ul>
+    </span>
+    <span>
+        项目经验：
+        <ul>
+            <li>项目A
+                <ul>
+                    <li>为期三个月的微信小程序开发</li>
+                    <li>后端工程师</li>
+                </ul>
+            </li>
+            <li>自学web前端开发</li>
+            <li>自学java开发</li>
+        </ul>
+    </span>
+</body>
+
+</html>
